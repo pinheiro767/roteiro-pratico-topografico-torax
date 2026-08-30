@@ -1,4 +1,4 @@
-﻿numero_global;arquivo;secao;numero_no_roteiro;nome
+﻿numero;arquivo;secao;roteiro;nome
 1;1.png;COSTELAS;1.;Costelas verdadeiras (1° ao 7° par)
 2;2.png;COSTELAS;2.;Costelas falsas (8° ao 10° par)
 3;3.png;COSTELAS;3.;Costelas flutuantes (11° e 12° par)
