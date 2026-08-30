@@ -1,0 +1,95 @@
+﻿numero_global;arquivo;secao;numero_no_roteiro;nome
+1;1.png;COSTELAS;1.;Costelas verdadeiras (1° ao 7° par)
+2;2.png;COSTELAS;2.;Costelas falsas (8° ao 10° par)
+3;3.png;COSTELAS;3.;Costelas flutuantes (11° e 12° par)
+4;4.png;COSTELAS;4.;Cartilagem costal
+5;5.png;COSTELAS;5.;Margem costal
+6;6.png;COSTELAS;6.;Cabeça da costela
+7;7.png;COSTELAS;a.;Face articular superior da cabeça da costela
+8;8.png;COSTELAS;b.;Face articular inferior da cabeça da costela
+9;9.png;COSTELAS;7.;Colo da costela
+10;10.png;COSTELAS;8.;Tubérculo da costela
+11;11.png;COSTELAS;9.;Ângulo da costela
+12;12.png;COSTELAS;10.;Corpo da costela
+13;13.png;COSTELAS;a.;Sulco da costela
+14;14.png;COSTELAS;11.;Costela I
+15;15.png;COSTELAS;a.;Sulco da artéria subclávia
+16;16.png;COSTELAS;b.;Tubérculo do músculo escaleno anterior
+17;17.png;COSTELAS;c.;Sulco da veia subclávia
+18;18.png;COSTELAS;12.;Costela II
+19;19.png;COSTELAS;a.;Tuberosidade do músculo serrátil anterior
+20;20.png;ARTICULAÇÕES DO TÓRAX;1.;Sincondrose da primeira costela
+21;21.png;ARTICULAÇÕES DO TÓRAX;2.;Articulações esternocostais (da segunda à sétima cartilagem costal)
+22;22.png;ARTICULAÇÕES DO TÓRAX;a.;Ligamento esternocostal radiado
+23;23.png;ARTICULAÇÕES DO TÓRAX;3.;Articulações costocondrais
+24;24.png;ARTICULAÇÕES DO TÓRAX;4.;Articulações costovertebrais
+25;25.png;ARTICULAÇÕES DO TÓRAX;a.;Articulação da cabeça da costela
+26;26.png;ARTICULAÇÕES DO TÓRAX;i.;Ligamento radiado da cabeça da costela
+27;27.png;ARTICULAÇÕES DO TÓRAX;b.;Articulação costotransversária
+28;28.png;ARTICULAÇÕES DO TÓRAX;i.;Ligamento costotransversário superior
+29;29.png;ARTICULAÇÕES DO TÓRAX;ii.;Ligamento costotransversário lateral
+30;30.png;ARTICULAÇÕES DO TÓRAX;5.;Ligamento costoxifoideo
+31;31.png;ARTICULAÇÕES DO TÓRAX;6.;Articulações intercondrais
+32;32.png;ARTICULAÇÕES DO TÓRAX;7.;Articulações dos processos articulares (zigapofisárias)
+33;33.png;ARTICULAÇÕES DO TÓRAX;8.;Ligamento longitudinal anterior
+34;34.png;ARTICULAÇÕES DO TÓRAX;9.;Ligamento longitudinal posterior
+35;35.png;ARTICULAÇÕES DO TÓRAX;10.;Ligamento amarelo
+36;36.png;ARTICULAÇÕES DO TÓRAX;11.;Ligamento interespinal
+37;37.png;ARTICULAÇÕES DO TÓRAX;12.;Ligamento supra-espinal
+38;38.png;ARTICULAÇÕES DO TÓRAX;13.;Ligamento intertransversário
+39;39.png;ARTICULAÇÕES DO TÓRAX;14.;Disco articular
+40;40.png;ARTICULAÇÕES DO TÓRAX;15.;Ligamento esternoclavicular anterior
+41;41.png;ARTICULAÇÕES DO TÓRAX;16.;Ligamento esternoclavicular posterior
+42;42.png;ARTICULAÇÕES DO TÓRAX;17.;Ligamento interclavicular
+43;43.png;ARTICULAÇÕES DO TÓRAX;18.;Ligamento costoclavicular
+44;44.png;MÚSCULOS DO DORSO;1.;Eretor da espinha
+45;45.png;MÚSCULOS DO DORSO;a.;Espinal do tórax
+46;46.png;MÚSCULOS DO DORSO;b.;Longuíssimo do tórax
+47;47.png;MÚSCULOS DO DORSO;;Íliocostal do lombo
+48;48.png;MÚSCULOS DO DORSO;2.;Aponeurose do m. eretor da espinha
+49;49.png;MÚSCULOS DO DORSO;1.;Semiespinal do tórax
+50;50.png;MÚSCULOS DO DORSO;2.;Multífidos do tórax
+51;51.png;MÚSCULOS DO DORSO;3.;Multífidos do lombo
+52;52.png;MÚSCULOS DO DORSO;4.;Rotadores do tórax
+53;53.png;MÚSCULOS DO DORSO;5.;Rotadores do lombo
+54;54.png;MÚSCULOS DO DORSO;6.;Intertransversários do lombo
+55;55.png;MÚSCULOS DO DORSO;7.;Interespinais do tórax
+56;56.png;MÚSCULOS DO DORSO;8.;Interespinais do lombo
+57;57.png;MÚSCULOS DO DORSO;9.;Levantadores das costelas
+58;58.png;MAMA;1.;Sulco intermamário
+59;59.png;MAMA;2.;Sulco inframamário
+60;60.png;MAMA;3.;Estroma da mama (tecido conjuntivo de sustentação)
+61;61.png;MAMA;4.;Ligamentos suspensores da mama
+62;62.png;MAMA;5.;Corpo da mama (ductos, gordura, vasos e nervos)
+63;63.png;MAMA;6.;Leito da mama
+64;64.png;MAMA;7.;Espaço retromamário
+65;65.png;MAMA;8.;Aréola da mama
+66;66.png;MAMA;9.;Papila mamária
+67;67.png;MAMA;10.;Glândulas areolares
+68;68.png;MAMA;11.;Processo axilar da mama
+69;69.png;MAMA;12.;Lóbulos da mama
+70;70.png;MAMA;13.;Ductos lactíferos
+71;71.png;MAMA;14.;Seios Lactíferos
+72;72.png;MAMA;15.;a. axilar
+73;73.png;MAMA;16.;a. Torácica lateral
+74;74.png;MAMA;a.;Ramos mamários laterais
+75;75.png;MAMA;17.;a. Subclávia
+76;76.png;MAMA;18.;a. Torácica interna
+77;77.png;MAMA;a.;Ramos mamários laterais
+78;78.png;MAMA;19);a. Intercostais posteriores
+79;79.png;MAMA;a.;Ramos cutâneos laterais
+80;80.png;MAMA;b.;Ramos mamários laterais
+81;81.png;MAMA;20);vv. Mamárias laterais
+82;82.png;MAMA;21);vv. Torácicas laterais
+83;83.png;MAMA;22);v. Axilar
+84;84.png;MAMA;23);vv. Mamárias mediais
+85;85.png;MAMA;24);vv. Torácicas internas
+86;86.png;MAMA;25);v. Subclávia
+87;87.png;MAMA;26);vv. Intercostais anteriores
+88;88.png;MAMA;27);vv. Intercostais posteriores
+89;89.png;MAMA;28);Plexos venosos vertebrais
+90;90.png;MAMA;29);Sistema ázigo
+91;91.png;MAMA;30);nn. Supraclaviculares
+92;92.png;MAMA;31);Ramos cutâneos mediais dos nn. intercostais anteriores
+93;93.png;MAMA;32);Ramos cutâneos laterais dos nn. intercostais posteriores
+94;94.png;MAMA;33);Explique a drenagem linfática das mamas

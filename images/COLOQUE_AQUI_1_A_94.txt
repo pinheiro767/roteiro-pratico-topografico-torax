@@ -1,0 +1,10 @@
+COLOQUE NESTA PASTA:
+1.png
+2.png
+3.png
+...
+94.png
+
+O Atlas reconhece automaticamente os arquivos.
+Não é necessário editar index.html, app.js ou structures.js.
+As imagens são exibidas com object-fit: contain, sem corte.

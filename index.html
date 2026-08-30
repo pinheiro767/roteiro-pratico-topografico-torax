@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#8a5b3d">
+<title>Atlas Digital de Anatomia Humana — Tórax</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="appbar">
+  <div class="brand">
+    <div class="brand-seal">A</div>
+    <div><strong>Atlas Digital de Anatomia Humana</strong><span>Tórax • 94 fichas</span></div>
+  </div>
+  <div class="app-actions">
+    <button id="paletteBtn">🎨 Aparência</button>
+    <button id="printBtn">📄 PDF / Imprimir</button>
+    <button id="installBtn" hidden>⬇ Instalar</button>
+  </div>
+</header>
+
+<section id="palette" class="palette" hidden>
+  <label>Cor de destaque <input id="accent" type="color" value="#8a5b3d"></label>
+  <label>Cor do fundo <input id="background" type="color" value="#f2eee7"></label>
+  <button data-preset="paper">Papel</button>
+  <button data-preset="light">Claro</button>
+  <button data-preset="dark">Escuro</button>
+</section>
+
+<div class="shell">
+  <aside class="side">
+    <input id="search" type="search" placeholder="Buscar estrutura…">
+    <div class="filter-row">
+      <button class="filter active" data-filter="all">Todos</button>
+      <button class="filter" data-filter="has">Com imagem</button>
+      <button class="filter" data-filter="missing">Sem imagem</button>
+    </div>
+    <div id="coverage" class="coverage"></div>
+    <nav id="nav"></nav>
+  </aside>
+
+  <main>
+    <section class="intro">
+      <div><small>ATLAS DIDÁTICO</small><h1>Tórax</h1><p>Fotografia anatômica em destaque, localização anatômica e navegação por 94 fichas.</p></div>
+      <div class="count"><strong>94</strong><span>estruturas</span></div>
+    </section>
+    <div id="content"></div>
+  </main>
+</div>
+
+<div id="viewer" class="viewer" hidden>
+  <div class="viewerTop">
+    <div id="viewerTitle"></div>
+    <div>
+      <button id="minus">−</button><button id="reset">100%</button><button id="plus">+</button><button id="close">✕</button>
+    </div>
+  </div>
+  <div id="stage" class="stage"><img id="viewerImage" alt=""></div>
+</div>
+
+<script src="structures.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

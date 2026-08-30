@@ -1,0 +1,7 @@
+Coloque aqui, por exemplo, o arquivo:
+1.PNG
+
+Depois abra o index.html.
+O card global 1 deve exibir a imagem automaticamente.
+
+A pasta images deve permanecer ao lado do index.html, não fora da pasta do Atlas.
