@@ -1,23 +1,13 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#75543c"><title>Atlas Digital de Anatomia Humana — Tórax</title>
-<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css"></head>
-<body>
-<header class="top"><div class="brand"><b>A</b><span><strong>Atlas Digital de Anatomia Humana</strong><small>Tórax • 94 estruturas</small></span></div><button id="theme">🎨 Aparência</button></header>
-<div id="themebox" class="themebox" hidden><label>Destaque <input id="accent" type="color" value="#75543c"></label><label>Fundo <input id="bg" type="color" value="#f3efe9"></label></div>
-<div class="shell">
-<aside><input id="search" placeholder="Buscar estrutura…"><div id="coverage"></div><nav id="nav"></nav></aside>
-<main><section class="hero"><div><small>ATLAS INTERATIVO</small><h1>Tórax</h1><p>Clique em um dos 94 nomes. A imagem só aparece quando a ficha é aberta.</p></div><strong>94</strong></section><div id="sections"></div></main>
-</div>
-<div id="modal" class="modal" hidden>
-<div class="sheet">
-<header class="sheethead"><div><span id="num"></span><div><small id="sec"></small><h2 id="title"></h2><p id="orig"></p></div></div><button id="close">✕</button></header>
-<div class="detail">
-<div>
-<div id="stage" class="stage"><div id="ph"><b id="expected"></b><span>Coloque este arquivo na pasta images.</span></div><img id="img" hidden></div>
-<div class="zoom"><button id="minus">−</button><button id="reset">100%</button><button id="plus">+</button></div>
-<div id="gallery" class="gallery"></div>
-</div>
-<section class="info"><div class="infoBox"><small>LOCALIZAÇÃO ANATÔMICA</small><p id="loc"></p></div><div class="infoBox"><small>ARQUIVO</small><p id="file"></p></div><label class="act primary">📎 Anexar fotos<input id="attach" type="file" accept="image/*" multiple></label><label class="act">📷 Tirar foto<input id="camera" type="file" accept="image/*" capture="environment"></label></section>
-</div></div></div>
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07131f">
+<title>Atlas Digital de Anatomia Humana — Tórax</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip" href="#content">Ir para o conteúdo</a>
+<header class="appbar"><div class="brand"><div class="brand-seal" aria-hidden="true"><img src="icons/icon-192.png" alt=""></div><div><strong>Atlas Digital de Anatomia Humana</strong><span>Tórax • 94 fichas</span></div></div>
+<div class="app-actions"><button id="audioBtn" aria-pressed="false">🔊 Áudio</button><button id="accessBtn">♿ Acessibilidade</button><button id="paletteBtn">🎨 Aparência</button><button id="printBtn">📄 Gerar PDF</button><button id="installBtn" hidden>⬇ Instalar</button></div></header>
+<section id="accessPanel" class="floating-panel" hidden aria-label="Opções de acessibilidade"><strong>Acessibilidade</strong><div class="panel-grid"><button id="fontDown">A−</button><button id="fontUp">A+</button><button id="contrastBtn" aria-pressed="false">◐ Alto contraste</button><button id="motionBtn" aria-pressed="false">⏸ Reduzir movimento</button><button id="librasBtn">🤟 Libras (VLibras)</button></div><p>Compatível com teclado e leitores de tela. O VLibras requer internet.</p></section>
+<section id="palette" class="floating-panel palette" hidden><label>Cor de destaque <input id="accent" type="color" value="#24b7ff"></label><label>Cor do fundo <input id="background" type="color" value="#07131f"></label><button data-preset="ocean">Oceano</button><button data-preset="light">Claro</button><button data-preset="dark">Escuro</button></section>
+<div class="shell"><aside class="side"><div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar estrutura…" aria-label="Buscar estrutura"></div><div class="filter-row"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="has">Com imagem</button><button class="filter" data-filter="missing">Sem imagem</button></div><div id="coverage" class="coverage" aria-live="polite"></div><nav id="nav" aria-label="Seções do atlas"></nav></aside>
+<main><section class="hero"><div><small>ATLAS DIDÁTICO • ANATOMIA HUMANA</small><h1>Explore o tórax<br><em>em detalhe.</em></h1><p>Fotografias anatômicas, localização, zoom e galeria pessoal em uma experiência responsiva.</p></div><div class="hero-stat"><strong>94</strong><span>estruturas</span><i></i><b id="heroCoverage">0%</b><span>com imagem</span></div></section><div id="content"></div></main></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="viewer" class="viewer" hidden role="dialog" aria-modal="true" aria-label="Visualizador de imagem"><div class="viewerTop"><div id="viewerTitle"></div><div><button id="minus" aria-label="Diminuir zoom">−</button><button id="reset">100%</button><button id="plus" aria-label="Aumentar zoom">+</button><button id="close" aria-label="Fechar">✕</button></div></div><div id="stage" class="stage"><img id="viewerImage" alt=""></div></div>
 <script src="structures.js"></script><script src="app.js"></script></body></html>
