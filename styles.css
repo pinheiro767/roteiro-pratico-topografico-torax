@@ -39,3 +39,14 @@ body.high-contrast{--bg:#000!important;--panel:#000!important;--panel2:#111!impo
 .anatomy-info .location p,.anatomy-info .function p{margin:6px 0 0;color:var(--muted);font-size:.8rem;line-height:1.55}
 @media(max-width:680px){.anatomy-info{grid-template-columns:1fr;padding-left:12px;padding-right:12px}}
 @media print{.anatomy-info{display:block;padding:4mm}.anatomy-info .location,.anatomy-info .function{border:0;padding:2mm 0;background:#fff}.anatomy-info p{color:#222!important}}
+
+/* Botão de acesso ao game de vascularização e drenagem da mama */
+.hero-game-wrap{margin-top:24px}
+.hero-game-btn{display:inline-flex;align-items:center;gap:12px;min-height:62px;padding:11px 16px 11px 12px;border-radius:18px;text-decoration:none;color:#f7fcff;background:linear-gradient(135deg,rgba(var(--accent-rgb),.20),rgba(76,124,255,.22));border:1px solid rgba(var(--accent-rgb),.40);box-shadow:0 12px 30px rgba(0,0,0,.20),0 0 28px rgba(var(--accent-rgb),.08);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;position:relative;z-index:2}
+.hero-game-btn:hover{transform:translateY(-2px);border-color:rgba(var(--accent-rgb),.72);background:linear-gradient(135deg,rgba(var(--accent-rgb),.30),rgba(76,124,255,.30));box-shadow:0 16px 36px rgba(0,0,0,.25),0 0 34px rgba(var(--accent-rgb),.14)}
+.hero-game-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,var(--accent),#4d7dff);font-size:1.15rem;box-shadow:0 7px 18px rgba(var(--accent-rgb),.24)}
+.hero-game-btn strong{display:block;font-size:.92rem;letter-spacing:.01em}
+.hero-game-btn small{display:block;margin-top:2px;color:#b9d5e7;font-size:.70rem;letter-spacing:.01em}
+.hero-game-arrow{margin-left:4px;color:#84dcff;font-size:1.05rem;font-weight:900}
+@media(max-width:680px){.hero-game-btn{display:flex;width:100%;max-width:100%;padding-right:13px}.hero-game-btn small{font-size:.66rem}.hero-game-arrow{margin-left:auto}}
+@media print{.hero-game-wrap{display:none!important}}
