@@ -8,7 +8,8 @@ window.ATLAS_ITEMS=[
     "name": "Costelas verdadeiras (1° ao 7° par)",
     "level": 0,
     "group": "",
-    "location": "Parede torácica; sete primeiros pares de costelas."
+    "location": "Parede torácica; sete primeiros pares de costelas.",
+    "function": "Protegem as vísceras torácicas, sustentam a parede do tórax e participam dos movimentos respiratórios; ligam-se diretamente ao esterno por suas próprias cartilagens costais."
   },
   {
     "global": 2,
@@ -19,7 +20,8 @@ window.ATLAS_ITEMS=[
     "name": "Costelas falsas (8° ao 10° par)",
     "level": 0,
     "group": "",
-    "location": "Parede torácica inferior; pares 8 a 10."
+    "location": "Parede torácica inferior; pares 8 a 10.",
+    "function": "Contribuem para proteção e mecânica respiratória; suas cartilagens unem-se indiretamente ao esterno por meio da cartilagem da costela superior."
   },
   {
     "global": 3,
@@ -30,7 +32,8 @@ window.ATLAS_ITEMS=[
     "name": "Costelas flutuantes (11° e 12° par)",
     "level": 0,
     "group": "",
-    "location": "Porção posterolateral inferior da parede torácica."
+    "location": "Porção posterolateral inferior da parede torácica.",
+    "function": "Protegem a região posterolateral inferior do tórax e permitem mobilidade; não possuem ligação anterior com o esterno."
   },
   {
     "global": 4,
@@ -41,7 +44,8 @@ window.ATLAS_ITEMS=[
     "name": "Cartilagem costal",
     "level": 0,
     "group": "",
-    "location": "Extremidade anterior das costelas, entre costela e esterno/margem costal."
+    "location": "Extremidade anterior das costelas, entre costela e esterno/margem costal.",
+    "function": "Prolonga anteriormente a costela, confere elasticidade à parede torácica e participa da expansão e retração durante a respiração."
   },
   {
     "global": 5,
@@ -52,7 +56,8 @@ window.ATLAS_ITEMS=[
     "name": "Margem costal",
     "level": 0,
     "group": "",
-    "location": "Borda inferior da caixa torácica."
+    "location": "Borda inferior da caixa torácica.",
+    "function": "Forma o limite inferior anterior da caixa torácica e serve como importante referência anatômica de superfície."
   },
   {
     "global": 6,
@@ -63,7 +68,8 @@ window.ATLAS_ITEMS=[
     "name": "Cabeça da costela",
     "level": 0,
     "group": "",
-    "location": "Extremidade posterior da costela, junto às vértebras torácicas."
+    "location": "Extremidade posterior da costela, junto às vértebras torácicas.",
+    "function": "Articula a costela com os corpos das vértebras torácicas, transmitindo forças e permitindo pequenos movimentos respiratórios."
   },
   {
     "global": 7,
@@ -74,7 +80,8 @@ window.ATLAS_ITEMS=[
     "name": "Face articular superior da cabeça da costela",
     "level": 1,
     "group": "",
-    "location": "Na cabeça de uma costela típica."
+    "location": "Na cabeça de uma costela típica.",
+    "function": "Participa da articulação da cabeça da costela com a vértebra superior correspondente."
   },
   {
     "global": 8,
@@ -85,7 +92,8 @@ window.ATLAS_ITEMS=[
     "name": "Face articular inferior da cabeça da costela",
     "level": 1,
     "group": "",
-    "location": "Na cabeça de uma costela típica."
+    "location": "Na cabeça de uma costela típica.",
+    "function": "Participa da articulação da cabeça da costela com a vértebra de mesmo número."
   },
   {
     "global": 9,
@@ -96,7 +104,8 @@ window.ATLAS_ITEMS=[
     "name": "Colo da costela",
     "level": 0,
     "group": "",
-    "location": "Entre a cabeça e o tubérculo da costela."
+    "location": "Entre a cabeça e o tubérculo da costela.",
+    "function": "Une a cabeça ao tubérculo da costela e serve de área de fixação para ligamentos costotransversários."
   },
   {
     "global": 10,
@@ -107,7 +116,8 @@ window.ATLAS_ITEMS=[
     "name": "Tubérculo da costela",
     "level": 0,
     "group": "",
-    "location": "Região posterior, na junção do colo com o corpo."
+    "location": "Região posterior, na junção do colo com o corpo.",
+    "function": "Articula-se com o processo transverso da vértebra correspondente e serve de inserção ligamentar."
   },
   {
     "global": 11,
@@ -118,7 +128,8 @@ window.ATLAS_ITEMS=[
     "name": "Ângulo da costela",
     "level": 0,
     "group": "",
-    "location": "Região posterior do corpo da costela, no ponto de maior curvatura."
+    "location": "Região posterior do corpo da costela, no ponto de maior curvatura.",
+    "function": "Marca a região de maior curvatura da costela e relaciona-se com a mudança de direção de seu corpo."
   },
   {
     "global": 12,
@@ -129,7 +140,8 @@ window.ATLAS_ITEMS=[
     "name": "Corpo da costela",
     "level": 0,
     "group": "",
-    "location": "Porção longa e arqueada da costela."
+    "location": "Porção longa e arqueada da costela.",
+    "function": "Constitui a maior parte da costela, formando a parede torácica e contribuindo para proteção e respiração."
   },
   {
     "global": 13,
@@ -140,7 +152,8 @@ window.ATLAS_ITEMS=[
     "name": "Sulco da costela",
     "level": 1,
     "group": "",
-    "location": "Face interna da margem inferior do corpo da costela."
+    "location": "Face interna da margem inferior do corpo da costela.",
+    "function": "Abriga e protege o feixe neurovascular intercostal, especialmente veia, artéria e nervo intercostais."
   },
   {
     "global": 14,
@@ -151,7 +164,8 @@ window.ATLAS_ITEMS=[
     "name": "Costela I",
     "level": 0,
     "group": "",
-    "location": "Abertura superior do tórax, profundamente à clavícula."
+    "location": "Abertura superior do tórax, profundamente à clavícula.",
+    "function": "Delimita a abertura superior do tórax, protege estruturas cervicotorácicas e oferece inserção a músculos e ligamentos."
   },
   {
     "global": 15,
@@ -162,7 +176,8 @@ window.ATLAS_ITEMS=[
     "name": "Sulco da artéria subclávia",
     "level": 1,
     "group": "",
-    "location": "Face superior da costela I."
+    "location": "Face superior da costela I.",
+    "function": "Acomoda a artéria subclávia na face superior da primeira costela, posterior ao tubérculo do escaleno anterior."
   },
   {
     "global": 16,
@@ -173,7 +188,8 @@ window.ATLAS_ITEMS=[
     "name": "Tubérculo do músculo escaleno anterior",
     "level": 1,
     "group": "",
-    "location": "Face superior da costela I."
+    "location": "Face superior da costela I.",
+    "function": "Serve de inserção ao músculo escaleno anterior e separa os sulcos da veia e da artéria subclávias."
   },
   {
     "global": 17,
@@ -184,7 +200,8 @@ window.ATLAS_ITEMS=[
     "name": "Sulco da veia subclávia",
     "level": 1,
     "group": "",
-    "location": "Face superior da costela I."
+    "location": "Face superior da costela I.",
+    "function": "Acomoda a veia subclávia na face superior da primeira costela, anterior ao tubérculo do escaleno anterior."
   },
   {
     "global": 18,
@@ -195,7 +212,8 @@ window.ATLAS_ITEMS=[
     "name": "Costela II",
     "level": 0,
     "group": "",
-    "location": "Imediatamente inferior à costela I."
+    "location": "Imediatamente inferior à costela I.",
+    "function": "Participa da parede superior do tórax e oferece inserção ao músculo serrátil anterior."
   },
   {
     "global": 19,
@@ -206,7 +224,8 @@ window.ATLAS_ITEMS=[
     "name": "Tuberosidade do músculo serrátil anterior",
     "level": 1,
     "group": "",
-    "location": "Face superior da costela II."
+    "location": "Face superior da costela II.",
+    "function": "Serve como área de inserção do músculo serrátil anterior, contribuindo indiretamente para a estabilização e protração da escápula."
   },
   {
     "global": 20,
@@ -217,7 +236,8 @@ window.ATLAS_ITEMS=[
     "name": "Sincondrose da primeira costela",
     "level": 0,
     "group": "",
-    "location": "Entre a primeira cartilagem costal e o manúbrio."
+    "location": "Entre a primeira cartilagem costal e o manúbrio.",
+    "function": "Une firmemente a primeira cartilagem costal ao manúbrio, garantindo estabilidade à parte superior da parede torácica anterior."
   },
   {
     "global": 21,
@@ -228,7 +248,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulações esternocostais (da segunda à sétima cartilagem costal)",
     "level": 0,
     "group": "",
-    "location": "Entre as cartilagens costais 2–7 e o esterno."
+    "location": "Entre as cartilagens costais 2–7 e o esterno.",
+    "function": "Permitem pequenos movimentos entre esterno e cartilagens costais, importantes para a expansão da caixa torácica na respiração."
   },
   {
     "global": 22,
@@ -239,7 +260,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento esternocostal radiado",
     "level": 1,
     "group": "",
-    "location": "Face anterior das articulações esternocostais."
+    "location": "Face anterior das articulações esternocostais.",
+    "function": "Reforça anteriormente as articulações esternocostais e ajuda a estabilizar a união entre cartilagens costais e esterno."
   },
   {
     "global": 23,
@@ -250,7 +272,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulações costocondrais",
     "level": 0,
     "group": "",
-    "location": "Entre costelas e respectivas cartilagens costais."
+    "location": "Entre costelas e respectivas cartilagens costais.",
+    "function": "Unem costela e cartilagem costal, transmitindo movimentos e forças da parede óssea para a porção cartilaginosa."
   },
   {
     "global": 24,
@@ -261,7 +284,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulações costovertebrais",
     "level": 0,
     "group": "",
-    "location": "Região posterior do tórax, entre costelas e vértebras torácicas."
+    "location": "Região posterior do tórax, entre costelas e vértebras torácicas.",
+    "function": "Conectam as costelas às vértebras torácicas e permitem movimentos de elevação e depressão das costelas durante a respiração."
   },
   {
     "global": 25,
@@ -272,7 +296,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulação da cabeça da costela",
     "level": 1,
     "group": "",
-    "location": "Entre a cabeça da costela e os corpos vertebrais adjacentes."
+    "location": "Entre a cabeça da costela e os corpos vertebrais adjacentes.",
+    "function": "Permite o movimento da cabeça da costela sobre os corpos vertebrais durante a mecânica respiratória."
   },
   {
     "global": 26,
@@ -283,7 +308,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento radiado da cabeça da costela",
     "level": 2,
     "group": "",
-    "location": "Face anterior da articulação da cabeça da costela."
+    "location": "Face anterior da articulação da cabeça da costela.",
+    "function": "Reforça a articulação da cabeça da costela e limita movimentos excessivos."
   },
   {
     "global": 27,
@@ -294,7 +320,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulação costotransversária",
     "level": 1,
     "group": "",
-    "location": "Entre o tubérculo da costela e o processo transverso."
+    "location": "Entre o tubérculo da costela e o processo transverso.",
+    "function": "Permite pequenos deslizamentos e rotações entre o tubérculo da costela e o processo transverso durante a respiração."
   },
   {
     "global": 28,
@@ -305,7 +332,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento costotransversário superior",
     "level": 2,
     "group": "",
-    "location": "Entre o colo da costela e o processo transverso superior."
+    "location": "Entre o colo da costela e o processo transverso superior.",
+    "function": "Estabiliza a articulação costotransversária e limita deslocamentos excessivos da costela."
   },
   {
     "global": 29,
@@ -316,7 +344,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento costotransversário lateral",
     "level": 2,
     "group": "",
-    "location": "Entre processo transverso e tubérculo da costela."
+    "location": "Entre processo transverso e tubérculo da costela.",
+    "function": "Reforça lateralmente a articulação costotransversária e contribui para sua estabilidade."
   },
   {
     "global": 30,
@@ -327,7 +356,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento costoxifoideo",
     "level": 0,
     "group": "",
-    "location": "Entre cartilagem costal inferior e processo xifoide."
+    "location": "Entre cartilagem costal inferior e processo xifoide.",
+    "function": "Une a cartilagem da sétima costela ao processo xifoide, reforçando a região inferior da parede torácica anterior."
   },
   {
     "global": 31,
@@ -338,7 +368,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulações intercondrais",
     "level": 0,
     "group": "",
-    "location": "Entre cartilagens costais adjacentes."
+    "location": "Entre cartilagens costais adjacentes.",
+    "function": "Permitem pequenos movimentos entre cartilagens costais adjacentes e aumentam a flexibilidade da margem costal."
   },
   {
     "global": 32,
@@ -349,7 +380,8 @@ window.ATLAS_ITEMS=[
     "name": "Articulações dos processos articulares (zigapofisárias)",
     "level": 0,
     "group": "",
-    "location": "Entre processos articulares de vértebras torácicas adjacentes."
+    "location": "Entre processos articulares de vértebras torácicas adjacentes.",
+    "function": "Guiam e limitam os movimentos entre vértebras torácicas, contribuindo para estabilidade e mobilidade controlada da coluna."
   },
   {
     "global": 33,
@@ -360,7 +392,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento longitudinal anterior",
     "level": 0,
     "group": "",
-    "location": "Face anterior dos corpos vertebrais."
+    "location": "Face anterior dos corpos vertebrais.",
+    "function": "Limita a hiperextensão da coluna vertebral e reforça anteriormente os corpos e discos vertebrais."
   },
   {
     "global": 34,
@@ -371,7 +404,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento longitudinal posterior",
     "level": 0,
     "group": "",
-    "location": "Face posterior dos corpos vertebrais, no canal vertebral."
+    "location": "Face posterior dos corpos vertebrais, no canal vertebral.",
+    "function": "Limita principalmente a flexão da coluna e reforça posteriormente os corpos vertebrais dentro do canal vertebral."
   },
   {
     "global": 35,
@@ -382,7 +416,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento amarelo",
     "level": 0,
     "group": "",
-    "location": "Entre lâminas de vértebras adjacentes."
+    "location": "Entre lâminas de vértebras adjacentes.",
+    "function": "Une lâminas vertebrais adjacentes, auxilia o retorno da coluna após flexão e limita flexão excessiva."
   },
   {
     "global": 36,
@@ -393,7 +428,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento interespinal",
     "level": 0,
     "group": "",
-    "location": "Entre processos espinhosos adjacentes."
+    "location": "Entre processos espinhosos adjacentes.",
+    "function": "Une processos espinhosos adjacentes e limita a flexão excessiva da coluna vertebral."
   },
   {
     "global": 37,
@@ -404,7 +440,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento supra-espinal",
     "level": 0,
     "group": "",
-    "location": "Ao longo das extremidades dos processos espinhosos."
+    "location": "Ao longo das extremidades dos processos espinhosos.",
+    "function": "Une os ápices dos processos espinhosos e ajuda a limitar a flexão da coluna."
   },
   {
     "global": 38,
@@ -415,7 +452,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento intertransversário",
     "level": 0,
     "group": "",
-    "location": "Entre processos transversos adjacentes."
+    "location": "Entre processos transversos adjacentes.",
+    "function": "Une processos transversos adjacentes e limita a inclinação lateral contralateral."
   },
   {
     "global": 39,
@@ -426,7 +464,8 @@ window.ATLAS_ITEMS=[
     "name": "Disco articular",
     "level": 0,
     "group": "",
-    "location": "Componente fibrocartilaginoso em articulações relacionadas."
+    "location": "Componente fibrocartilaginoso em articulações relacionadas.",
+    "function": "Aumenta a congruência da articulação esternoclavicular, distribui cargas e absorve impactos entre clavícula e esterno."
   },
   {
     "global": 40,
@@ -437,7 +476,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento esternoclavicular anterior",
     "level": 0,
     "group": "",
-    "location": "Face anterior da articulação esternoclavicular."
+    "location": "Face anterior da articulação esternoclavicular.",
+    "function": "Reforça anteriormente a cápsula esternoclavicular e limita deslocamentos excessivos da clavícula."
   },
   {
     "global": 41,
@@ -448,7 +488,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento esternoclavicular posterior",
     "level": 0,
     "group": "",
-    "location": "Face posterior da articulação esternoclavicular."
+    "location": "Face posterior da articulação esternoclavicular.",
+    "function": "Reforça posteriormente a cápsula esternoclavicular e contribui para a estabilidade da cintura escapular."
   },
   {
     "global": 42,
@@ -459,7 +500,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento interclavicular",
     "level": 0,
     "group": "",
-    "location": "Entre as extremidades esternais das clavículas."
+    "location": "Entre as extremidades esternais das clavículas.",
+    "function": "Une as extremidades esternais das clavículas sobre o manúbrio e limita a depressão excessiva da clavícula."
   },
   {
     "global": 43,
@@ -470,7 +512,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamento costoclavicular",
     "level": 0,
     "group": "",
-    "location": "Entre costela I/cartilagem e clavícula."
+    "location": "Entre costela I/cartilagem e clavícula.",
+    "function": "Ancora a clavícula à primeira costela e limita sua elevação excessiva, estabilizando a articulação esternoclavicular."
   },
   {
     "global": 44,
@@ -481,7 +524,8 @@ window.ATLAS_ITEMS=[
     "name": "Eretor da espinha",
     "level": 0,
     "group": "",
-    "location": "Massa muscular profunda longitudinal do dorso."
+    "location": "Massa muscular profunda longitudinal do dorso.",
+    "function": "Principal extensor da coluna vertebral; também participa da inclinação lateral e da manutenção da postura."
   },
   {
     "global": 45,
@@ -492,7 +536,8 @@ window.ATLAS_ITEMS=[
     "name": "Espinal do tórax",
     "level": 1,
     "group": "",
-    "location": "Porção medial do eretor da espinha na região torácica."
+    "location": "Porção medial do eretor da espinha na região torácica.",
+    "function": "Auxilia na extensão da coluna torácica e na manutenção da postura."
   },
   {
     "global": 46,
@@ -503,7 +548,8 @@ window.ATLAS_ITEMS=[
     "name": "Longuíssimo do tórax",
     "level": 1,
     "group": "",
-    "location": "Porção intermediária do eretor da espinha."
+    "location": "Porção intermediária do eretor da espinha.",
+    "function": "Estende e inclina lateralmente a coluna vertebral e contribui para a estabilização postural."
   },
   {
     "global": 47,
@@ -514,7 +560,8 @@ window.ATLAS_ITEMS=[
     "name": "Íliocostal do lombo",
     "level": 1,
     "group": "",
-    "location": "Porção lateral do eretor da espinha na região lombar."
+    "location": "Porção lateral do eretor da espinha na região lombar.",
+    "function": "Estende e inclina lateralmente a coluna lombar, auxiliando na manutenção da postura."
   },
   {
     "global": 48,
@@ -525,7 +572,8 @@ window.ATLAS_ITEMS=[
     "name": "Aponeurose do m. eretor da espinha",
     "level": 0,
     "group": "",
-    "location": "Região posterior inferior do tronco, relacionada ao eretor da espinha."
+    "location": "Região posterior inferior do tronco, relacionada ao eretor da espinha.",
+    "function": "Forma uma lâmina tendínea de origem e transmissão de força para o grupo eretor da espinha."
   },
   {
     "global": 49,
@@ -536,7 +584,8 @@ window.ATLAS_ITEMS=[
     "name": "Semiespinal do tórax",
     "level": 0,
     "group": "",
-    "location": "Plano profundo transversoespinal da região torácica."
+    "location": "Plano profundo transversoespinal da região torácica.",
+    "function": "Estende a coluna torácica bilateralmente e auxilia na rotação contralateral quando atua unilateralmente."
   },
   {
     "global": 50,
@@ -547,7 +596,8 @@ window.ATLAS_ITEMS=[
     "name": "Multífidos do tórax",
     "level": 0,
     "group": "",
-    "location": "Plano profundo ao longo das vértebras torácicas."
+    "location": "Plano profundo ao longo das vértebras torácicas.",
+    "function": "Estabilizam as vértebras torácicas e auxiliam na extensão e rotação contralateral da coluna."
   },
   {
     "global": 51,
@@ -558,7 +608,8 @@ window.ATLAS_ITEMS=[
     "name": "Multífidos do lombo",
     "level": 0,
     "group": "",
-    "location": "Plano profundo da região lombar."
+    "location": "Plano profundo da região lombar.",
+    "function": "Estabilizam as vértebras lombares e participam da extensão e rotação contralateral da coluna."
   },
   {
     "global": 52,
@@ -569,7 +620,8 @@ window.ATLAS_ITEMS=[
     "name": "Rotadores do tórax",
     "level": 0,
     "group": "",
-    "location": "Entre processos transversos e espinhosos torácicos."
+    "location": "Entre processos transversos e espinhosos torácicos.",
+    "function": "Estabilizam segmentos vertebrais torácicos e auxiliam na rotação contralateral e propriocepção."
   },
   {
     "global": 53,
@@ -580,7 +632,8 @@ window.ATLAS_ITEMS=[
     "name": "Rotadores do lombo",
     "level": 0,
     "group": "",
-    "location": "Plano profundo entre elementos vertebrais lombares."
+    "location": "Plano profundo entre elementos vertebrais lombares.",
+    "function": "Estabilizam segmentos vertebrais lombares e auxiliam discretamente na rotação e propriocepção."
   },
   {
     "global": 54,
@@ -591,7 +644,8 @@ window.ATLAS_ITEMS=[
     "name": "Intertransversários do lombo",
     "level": 0,
     "group": "",
-    "location": "Entre processos transversos lombares adjacentes."
+    "location": "Entre processos transversos lombares adjacentes.",
+    "function": "Estabilizam vértebras lombares e auxiliam na inclinação lateral da coluna."
   },
   {
     "global": 55,
@@ -602,7 +656,8 @@ window.ATLAS_ITEMS=[
     "name": "Interespinais do tórax",
     "level": 0,
     "group": "",
-    "location": "Entre processos espinhosos torácicos adjacentes."
+    "location": "Entre processos espinhosos torácicos adjacentes.",
+    "function": "Auxiliam na extensão e estabilização segmentar da coluna torácica."
   },
   {
     "global": 56,
@@ -613,7 +668,8 @@ window.ATLAS_ITEMS=[
     "name": "Interespinais do lombo",
     "level": 0,
     "group": "",
-    "location": "Entre processos espinhosos lombares adjacentes."
+    "location": "Entre processos espinhosos lombares adjacentes.",
+    "function": "Auxiliam na extensão e estabilização segmentar da coluna lombar."
   },
   {
     "global": 57,
@@ -624,7 +680,8 @@ window.ATLAS_ITEMS=[
     "name": "Levantadores das costelas",
     "level": 0,
     "group": "",
-    "location": "Região posterior do tórax, entre processos transversos e costelas."
+    "location": "Região posterior do tórax, entre processos transversos e costelas.",
+    "function": "Elevam as costelas e auxiliam discretamente na inspiração e na inclinação lateral da coluna torácica."
   },
   {
     "global": 58,
@@ -635,7 +692,8 @@ window.ATLAS_ITEMS=[
     "name": "Sulco intermamário",
     "level": 0,
     "group": "",
-    "location": "Linha mediana anterior entre as mamas."
+    "location": "Linha mediana anterior entre as mamas.",
+    "function": "Separa superficialmente as duas mamas e constitui referência anatômica da linha mediana anterior."
   },
   {
     "global": 59,
@@ -646,7 +704,8 @@ window.ATLAS_ITEMS=[
     "name": "Sulco inframamário",
     "level": 0,
     "group": "",
-    "location": "Dobra inferior entre mama e parede torácica."
+    "location": "Dobra inferior entre mama e parede torácica.",
+    "function": "Marca a transição inferior da mama para a parede torácica e contribui para o contorno e sustentação da mama."
   },
   {
     "global": 60,
@@ -657,7 +716,8 @@ window.ATLAS_ITEMS=[
     "name": "Estroma da mama (tecido conjuntivo de sustentação)",
     "level": 0,
     "group": "",
-    "location": "Tecido conjuntivo de sustentação do corpo da mama."
+    "location": "Tecido conjuntivo de sustentação do corpo da mama.",
+    "function": "Sustenta e organiza os componentes glandulares, adiposos, vasculares e nervosos da mama."
   },
   {
     "global": 61,
@@ -668,7 +728,8 @@ window.ATLAS_ITEMS=[
     "name": "Ligamentos suspensores da mama",
     "level": 0,
     "group": "",
-    "location": "Bandas fibrosas entre pele e planos profundos da mama."
+    "location": "Bandas fibrosas entre pele e planos profundos da mama.",
+    "function": "Fixam a pele e o tecido mamário à fáscia profunda, ajudando a manter a forma e a sustentação da mama."
   },
   {
     "global": 62,
@@ -679,7 +740,8 @@ window.ATLAS_ITEMS=[
     "name": "Corpo da mama (ductos, gordura, vasos e nervos)",
     "level": 0,
     "group": "",
-    "location": "Porção principal da mama sobre a parede torácica anterior."
+    "location": "Porção principal da mama sobre a parede torácica anterior.",
+    "function": "Reúne o parênquima glandular, ductos, gordura, vasos e nervos responsáveis pela estrutura, nutrição, sensibilidade e lactação."
   },
   {
     "global": 63,
@@ -690,7 +752,8 @@ window.ATLAS_ITEMS=[
     "name": "Leito da mama",
     "level": 0,
     "group": "",
-    "location": "Plano profundo sobre o qual repousa a mama."
+    "location": "Plano profundo sobre o qual repousa a mama.",
+    "function": "Serve como base de apoio da mama sobre a parede torácica, principalmente sobre a fáscia dos músculos peitoral maior e serrátil anterior."
   },
   {
     "global": 64,
@@ -701,7 +764,8 @@ window.ATLAS_ITEMS=[
     "name": "Espaço retromamário",
     "level": 0,
     "group": "",
-    "location": "Entre corpo da mama e fáscia peitoral."
+    "location": "Entre corpo da mama e fáscia peitoral.",
+    "function": "Permite certo grau de mobilidade da mama sobre a fáscia peitoral por conter tecido conjuntivo frouxo."
   },
   {
     "global": 65,
@@ -712,7 +776,8 @@ window.ATLAS_ITEMS=[
     "name": "Aréola da mama",
     "level": 0,
     "group": "",
-    "location": "Área pigmentada ao redor da papila."
+    "location": "Área pigmentada ao redor da papila.",
+    "function": "Área pigmentada que circunda a papila e contém glândulas especializadas que ajudam a proteger e lubrificar a pele durante a amamentação."
   },
   {
     "global": 66,
@@ -723,7 +788,8 @@ window.ATLAS_ITEMS=[
     "name": "Papila mamária",
     "level": 0,
     "group": "",
-    "location": "Centro da aréola."
+    "location": "Centro da aréola.",
+    "function": "É a projeção onde desembocam os ductos lactíferos, permitindo a saída do leite durante a lactação."
   },
   {
     "global": 67,
@@ -734,7 +800,8 @@ window.ATLAS_ITEMS=[
     "name": "Glândulas areolares",
     "level": 0,
     "group": "",
-    "location": "Na aréola."
+    "location": "Na aréola.",
+    "function": "Secretam material lipídico que lubrifica e protege a aréola e a papila, especialmente durante a amamentação."
   },
   {
     "global": 68,
@@ -745,7 +812,8 @@ window.ATLAS_ITEMS=[
     "name": "Processo axilar da mama",
     "level": 0,
     "group": "",
-    "location": "Prolongamento superolateral em direção à axila."
+    "location": "Prolongamento superolateral em direção à axila.",
+    "function": "Prolonga o tecido mamário em direção à axila e é clinicamente relevante na avaliação de alterações mamárias e linfonodais."
   },
   {
     "global": 69,
@@ -756,7 +824,8 @@ window.ATLAS_ITEMS=[
     "name": "Lóbulos da mama",
     "level": 0,
     "group": "",
-    "location": "No parênquima glandular mamário."
+    "location": "No parênquima glandular mamário.",
+    "function": "Unidades glandulares que contêm lóbulos menores e alvéolos secretores responsáveis pela produção de leite na lactação."
   },
   {
     "global": 70,
@@ -767,7 +836,8 @@ window.ATLAS_ITEMS=[
     "name": "Ductos lactíferos",
     "level": 0,
     "group": "",
-    "location": "Do tecido glandular em direção à papila."
+    "location": "Do tecido glandular em direção à papila.",
+    "function": "Conduzem o leite dos lóbulos glandulares em direção à papila mamária."
   },
   {
     "global": 71,
@@ -778,7 +848,8 @@ window.ATLAS_ITEMS=[
     "name": "Seios Lactíferos",
     "level": 0,
     "group": "",
-    "location": "Porção dilatada dos ductos próxima à papila."
+    "location": "Porção dilatada dos ductos próxima à papila.",
+    "function": "Regiões dilatadas dos ductos lactíferos próximas à papila, tradicionalmente descritas como áreas de armazenamento temporário do leite."
   },
   {
     "global": 72,
@@ -789,7 +860,8 @@ window.ATLAS_ITEMS=[
     "name": "a. axilar",
     "level": 0,
     "group": "",
-    "location": "Axila."
+    "location": "Axila.",
+    "function": "Principal artéria da axila; origina ramos que participam da irrigação da parede torácica e da porção lateral da mama."
   },
   {
     "global": 73,
@@ -800,7 +872,8 @@ window.ATLAS_ITEMS=[
     "name": "a. Torácica lateral",
     "level": 0,
     "group": "",
-    "location": "Parede torácica lateral, ramo da artéria axilar."
+    "location": "Parede torácica lateral, ramo da artéria axilar.",
+    "function": "Irriga a parede torácica lateral e fornece importante suprimento arterial para a porção lateral da mama."
   },
   {
     "global": 74,
@@ -811,7 +884,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos mamários laterais",
     "level": 1,
     "group": "",
-    "location": "Porção lateral da mama."
+    "location": "Porção lateral da mama.",
+    "function": "Distribuem sangue arterial para a porção lateral da mama."
   },
   {
     "global": 75,
@@ -822,7 +896,8 @@ window.ATLAS_ITEMS=[
     "name": "a. Subclávia",
     "level": 0,
     "group": "",
-    "location": "Raiz do pescoço e abertura superior do tórax."
+    "location": "Raiz do pescoço e abertura superior do tórax.",
+    "function": "Fornece origem indireta a vasos que irrigam a mama, especialmente por meio da artéria torácica interna e do tronco toracoacromial."
   },
   {
     "global": 76,
@@ -833,7 +908,8 @@ window.ATLAS_ITEMS=[
     "name": "a. Torácica interna",
     "level": 0,
     "group": "",
-    "location": "Face interna da parede torácica anterior, paralela ao esterno."
+    "location": "Face interna da parede torácica anterior, paralela ao esterno.",
+    "function": "Fornece ramos perfurantes e intercostais anteriores que irrigam sobretudo a porção medial da mama."
   },
   {
     "global": 77,
@@ -844,7 +920,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos mamários laterais",
     "level": 1,
     "group": "",
-    "location": "Ramos destinados à mama."
+    "location": "Ramos destinados à mama.",
+    "function": "Participam do suprimento arterial do tecido mamário conforme a distribuição dos ramos que alcançam a mama."
   },
   {
     "global": 78,
@@ -855,7 +932,8 @@ window.ATLAS_ITEMS=[
     "name": "a. Intercostais posteriores",
     "level": 0,
     "group": "",
-    "location": "Espaços intercostais posteriores."
+    "location": "Espaços intercostais posteriores.",
+    "function": "Fornecem ramos para espaços intercostais e ramos cutâneos laterais que contribuem para a irrigação da mama."
   },
   {
     "global": 79,
@@ -866,7 +944,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos cutâneos laterais",
     "level": 1,
     "group": "",
-    "location": "Parede torácica lateral."
+    "location": "Parede torácica lateral.",
+    "function": "Irrigam pele e tecidos da parede torácica lateral e contribuem para a vascularização lateral da mama."
   },
   {
     "global": 80,
@@ -877,7 +956,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos mamários laterais",
     "level": 1,
     "group": "",
-    "location": "Porção lateral da mama."
+    "location": "Porção lateral da mama.",
+    "function": "Contribuem para o suprimento arterial do tecido mamário lateral."
   },
   {
     "global": 81,
@@ -888,7 +968,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Mamárias laterais",
     "level": 0,
     "group": "",
-    "location": "Porção lateral da mama."
+    "location": "Porção lateral da mama.",
+    "function": "Drenam o sangue venoso da porção lateral da mama em direção às veias torácicas laterais e ao sistema axilar."
   },
   {
     "global": 82,
@@ -899,7 +980,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Torácicas laterais",
     "level": 0,
     "group": "",
-    "location": "Parede torácica lateral e axila."
+    "location": "Parede torácica lateral e axila.",
+    "function": "Drenam a parede torácica lateral e a mama para a veia axilar."
   },
   {
     "global": 83,
@@ -910,7 +992,8 @@ window.ATLAS_ITEMS=[
     "name": "v. Axilar",
     "level": 0,
     "group": "",
-    "location": "Axila."
+    "location": "Axila.",
+    "function": "Recebe grande parte da drenagem venosa lateral da mama e a conduz para a veia subclávia."
   },
   {
     "global": 84,
@@ -921,7 +1004,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Mamárias mediais",
     "level": 0,
     "group": "",
-    "location": "Porção medial da mama."
+    "location": "Porção medial da mama.",
+    "function": "Drenam a porção medial da mama para as veias torácicas internas."
   },
   {
     "global": 85,
@@ -932,7 +1016,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Torácicas internas",
     "level": 0,
     "group": "",
-    "location": "Face interna da parede torácica anterior."
+    "location": "Face interna da parede torácica anterior.",
+    "function": "Recebem veias da parede torácica anterior e da mama, drenando superiormente para o sistema braquiocefálico."
   },
   {
     "global": 86,
@@ -943,7 +1028,8 @@ window.ATLAS_ITEMS=[
     "name": "v. Subclávia",
     "level": 0,
     "group": "",
-    "location": "Posterior à clavícula."
+    "location": "Posterior à clavícula.",
+    "function": "Recebe a veia axilar e conduz o sangue venoso do membro superior e de parte da parede torácica para a veia braquiocefálica."
   },
   {
     "global": 87,
@@ -954,7 +1040,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Intercostais anteriores",
     "level": 0,
     "group": "",
-    "location": "Espaços intercostais anteriores."
+    "location": "Espaços intercostais anteriores.",
+    "function": "Drenam os espaços intercostais anteriores e comunicam-se com as veias torácicas internas."
   },
   {
     "global": 88,
@@ -965,7 +1052,8 @@ window.ATLAS_ITEMS=[
     "name": "vv. Intercostais posteriores",
     "level": 0,
     "group": "",
-    "location": "Espaços intercostais posteriores."
+    "location": "Espaços intercostais posteriores.",
+    "function": "Drenam os espaços intercostais posteriores para o sistema ázigo e estabelecem comunicações com plexos venosos vertebrais."
   },
   {
     "global": 89,
@@ -976,7 +1064,8 @@ window.ATLAS_ITEMS=[
     "name": "Plexos venosos vertebrais",
     "level": 0,
     "group": "",
-    "location": "Ao redor e no interior da coluna vertebral."
+    "location": "Ao redor e no interior da coluna vertebral.",
+    "function": "Formam redes venosas sem válvulas ao redor da coluna, permitindo comunicação entre sistemas venosos torácicos, vertebrais e intracranianos."
   },
   {
     "global": 90,
@@ -987,7 +1076,8 @@ window.ATLAS_ITEMS=[
     "name": "Sistema ázigo",
     "level": 0,
     "group": "",
-    "location": "Mediastino posterior, junto à coluna vertebral."
+    "location": "Mediastino posterior, junto à coluna vertebral.",
+    "function": "Drena a parede posterior do tórax e conduz sangue venoso para a veia cava superior."
   },
   {
     "global": 91,
@@ -998,7 +1088,8 @@ window.ATLAS_ITEMS=[
     "name": "nn. Supraclaviculares",
     "level": 0,
     "group": "",
-    "location": "Região supraclavicular e parede torácica superior."
+    "location": "Região supraclavicular e parede torácica superior.",
+    "function": "Fornecem sensibilidade cutânea à região superior da mama e parede torácica acima, especialmente derivados dos ramos C3–C4 do plexo cervical."
   },
   {
     "global": 92,
@@ -1009,7 +1100,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos cutâneos mediais dos nn. intercostais anteriores",
     "level": 0,
     "group": "",
-    "location": "Porção anterior e medial da parede torácica."
+    "location": "Porção anterior e medial da parede torácica.",
+    "function": "Fornecem sensibilidade cutânea à porção medial da mama e da parede torácica anterior."
   },
   {
     "global": 93,
@@ -1020,7 +1112,8 @@ window.ATLAS_ITEMS=[
     "name": "Ramos cutâneos laterais dos nn. intercostais posteriores",
     "level": 0,
     "group": "",
-    "location": "Porção lateral da parede torácica."
+    "location": "Porção lateral da parede torácica.",
+    "function": "Fornecem sensibilidade cutânea à porção lateral da mama e da parede torácica."
   },
   {
     "global": 94,
@@ -1031,6 +1124,7 @@ window.ATLAS_ITEMS=[
     "name": "Explique a drenagem linfática das mamas",
     "level": 0,
     "group": "",
-    "location": "Mama e cadeias linfonodais relacionadas."
+    "location": "Mama e cadeias linfonodais relacionadas.",
+    "function": "A maior parte da linfa, especialmente dos quadrantes laterais, segue para linfonodos axilares, sobretudo o grupo peitoral; a porção medial drena também para linfonodos paraesternais, podendo comunicar-se com a mama contralateral. Há ainda vias para linfonodos intercostais posteriores e inferiores. A drenagem linfática é fundamental para defesa imune e para compreender a disseminação de neoplasias mamárias."
   }
 ];

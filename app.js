@@ -15,7 +15,87 @@ async function savePhoto(item,file){const blob=await optimizeImage(file);const i
 function tryImageCandidates(img,candidates){return new Promise(resolve=>{let i=0;const next=()=>{if(i>=candidates.length){img.removeAttribute('src');resolve(false);return}img.onload=()=>{img.onload=img.onerror=null;resolve(true)};img.onerror=()=>{img.onload=img.onerror=null;next()};img.src=candidates[i++]};next()})}
 async function hydrate(item,card){const img=card.querySelector('.main'),placeholder=card.querySelector('.placeholder'),status=card.querySelector('.status'),gal=card.querySelector('.gallery');let has=false,n=item.global,candidates=['png','PNG','jpg','JPG','jpeg','JPEG','webp','WEBP'].map(x=>`images/${n}.${x}`);if(await tryImageCandidates(img,candidates)){img.hidden=false;placeholder.hidden=true;has=true}const ps=await photos(item.id);if(!has&&ps.length){img.src=URL.createObjectURL(ps[0].blob);img.hidden=false;placeholder.hidden=true;has=true}status.textContent=has?'COM IMAGEM':'SEM IMAGEM';status.className='status'+(has?' ok':'');card.dataset.has=has?'1':'0';gal.innerHTML='';ps.forEach(p=>{const u=URL.createObjectURL(p.blob),w=document.createElement('div');w.className='thumbWrap';const t=document.createElement('img');t.src=u;t.className='thumb';t.alt=`Foto anexada de ${item.name}`;t.loading='lazy';t.onclick=()=>openViewer(u,item.name);const del=document.createElement('button');del.className='thumbDelete';del.textContent='×';del.title='Excluir foto';del.setAttribute('aria-label',`Excluir ${p.name}`);del.onclick=async()=>{if(confirm('Excluir esta fotografia?')){await removePhoto(p.id);await hydrate(item,card);coverage();apply();toast('Fotografia excluída.')}};w.append(t,del);gal.appendChild(w)});}
 async function addFiles(item,card,files){const valid=[...files].filter(f=>f.type.startsWith('image/'));if(!valid.length)return;toast(`Processando ${valid.length} foto${valid.length>1?'s':''}…`);for(const f of valid)await savePhoto(item.id,f);await hydrate(item,card);coverage();apply();toast(`${valid.length} foto${valid.length>1?'s anexadas':' anexada'} com sucesso.`)}
-async function build(){const sections=[...new Set(ITEMS.map(i=>i.section))];$('#nav').innerHTML=sections.map(s=>`<a href="#${slug(s)}">${esc(s)}</a>`).join('');const out=$('#content');out.innerHTML='';for(const sec of sections){const h=document.createElement('h2');h.className='section-title';h.id=slug(sec);h.textContent=sec;out.appendChild(h);const grid=document.createElement('div');grid.className='cards';out.appendChild(grid);for(const item of ITEMS.filter(x=>x.section===sec)){const a=document.createElement('article');a.className=`card level${item.level}`;a.id=item.id;a.dataset.name=(item.name+' '+item.section).toLowerCase();a.innerHTML=`<div class="card-head"><div class="gnum">${item.global}</div><div class="card-title"><h3>${esc(item.name)}</h3><span class="original">Roteiro: ${esc(item.original||'—')} • arquivo ${item.image}</span></div><span class="status">SEM IMAGEM</span></div><div class="figure"><div class="placeholder"><div class="icon">🖼️</div><strong>${item.image}</strong><small>Adicione ${item.image} à pasta <b>images</b><br>ou anexe quantas fotos desejar.</small></div><img class="main" hidden loading="lazy" alt="${esc(item.name)}"></div><div class="gallery"></div><div class="location"><div class="label">Localização anatômica</div><p>${esc(item.location)}</p></div><div class="card-actions"><button class="primary zoom">🔍 Ampliar</button><button class="speak">🔊 Ouvir</button><label class="fileLabel">📎 Várias fotos<input class="multi" type="file" accept="image/*" multiple></label><label class="fileLabel">📷 Câmera<input class="camera" type="file" accept="image/*" capture="environment"></label></div>`;grid.appendChild(a);a.querySelector('.zoom').onclick=()=>{if(!a.querySelector('.main').hidden)openViewer(a.querySelector('.main').src,item.name);else toast('Adicione uma imagem primeiro.')};a.querySelector('.main').onclick=()=>openViewer(a.querySelector('.main').src,item.name);a.querySelector('.speak').onclick=()=>speak(`${item.name}. Localização anatômica: ${item.location}`);a.querySelector('.multi').onchange=async e=>{await addFiles(item,a,e.target.files);e.target.value=''};a.querySelector('.camera').onchange=async e=>{await addFiles(item,a,e.target.files);e.target.value=''};a.querySelector('h3').onclick=()=>{if(audioMode)speak(`${item.name}. ${item.location}`)};await hydrate(item,a)}}coverage();apply()}
+async function build(){
+  const sections=[...new Set(ITEMS.map(i=>i.section))];
+  const out=$('#content');
+  out.innerHTML='';
+
+  // Cria TODAS as seções antes de habilitar a navegação.
+  // Assim Costelas, Mama etc. já existem no DOM mesmo enquanto as imagens carregam.
+  const grids=new Map();
+  for(const sec of sections){
+    const h=document.createElement('h2');
+    h.className='section-title';
+    h.id=slug(sec);
+    h.textContent=sec;
+    out.appendChild(h);
+    const grid=document.createElement('div');
+    grid.className='cards';
+    grid.dataset.section=slug(sec);
+    out.appendChild(grid);
+    grids.set(sec,grid);
+  }
+
+  $('#nav').innerHTML=sections.map(s=>`<a href="#${slug(s)}" data-section="${slug(s)}">${esc(s)}</a>`).join('');
+
+  function goToSection(id,link){
+    const target=document.getElementById(id);
+    if(!target)return false;
+    // Limpa busca/filtros caso tenham ocultado a seção escolhida.
+    if($('#search').value){$('#search').value='';}
+    if(filter!=='all'){
+      filter='all';
+      $$('.filter').forEach(x=>x.classList.toggle('active',x.dataset.filter==='all'));
+    }
+    apply();
+    $$('#nav a').forEach(x=>x.classList.remove('active'));
+    if(link)link.classList.add('active');
+    const header=$('.appbar');
+    const headerH=header?header.getBoundingClientRect().height:0;
+    const y=target.getBoundingClientRect().top+window.pageYOffset-headerH-18;
+    window.scrollTo({top:Math.max(0,y),behavior:document.body.classList.contains('reduce-motion')?'auto':'smooth'});
+    try{history.replaceState(null,'','#'+id)}catch(e){}
+    return true;
+  }
+
+  $('#nav').addEventListener('click',e=>{
+    const link=e.target.closest('a[data-section]');
+    if(!link)return;
+    e.preventDefault();
+    goToSection(link.dataset.section,link);
+  });
+
+  // Cria os cards sem bloquear a navegação pelo carregamento das imagens.
+  const pending=[];
+  for(const sec of sections){
+    const grid=grids.get(sec);
+    for(const item of ITEMS.filter(x=>x.section===sec)){
+      const a=document.createElement('article');
+      a.className=`card level${item.level}`;
+      a.id=item.id;
+      a.dataset.name=(item.name+' '+item.section).toLowerCase();
+      a.innerHTML=`<div class="card-head"><div class="gnum">${item.global}</div><div class="card-title"><h3>${esc(item.name)}</h3><span class="original">Roteiro: ${esc(item.original||'—')} • arquivo ${item.image}</span></div><span class="status">SEM IMAGEM</span></div><div class="figure"><div class="placeholder"><div class="icon">🖼️</div><strong>${item.image}</strong><small>Adicione ${item.image} à pasta <b>images</b><br>ou anexe quantas fotos desejar.</small></div><img class="main" hidden loading="lazy" alt="${esc(item.name)}"></div><div class="gallery"></div><div class="anatomy-info"><div class="location"><div class="label">📍 Localização anatômica</div><p>${esc(item.location)}</p></div><div class="function"><div class="label">⚙️ Função</div><p>${esc(item.function||'Informação funcional em revisão.')}</p></div></div><div class="card-actions"><button class="primary zoom">🔍 Ampliar</button><button class="speak">🔊 Ouvir</button><label class="fileLabel">📎 Várias fotos<input class="multi" type="file" accept="image/*" multiple></label><label class="fileLabel">📷 Câmera<input class="camera" type="file" accept="image/*" capture="environment"></label></div>`;
+      grid.appendChild(a);
+      a.querySelector('.zoom').onclick=()=>{if(!a.querySelector('.main').hidden)openViewer(a.querySelector('.main').src,item.name);else toast('Adicione uma imagem primeiro.')};
+      a.querySelector('.main').onclick=()=>openViewer(a.querySelector('.main').src,item.name);
+      a.querySelector('.speak').onclick=()=>speak(`${item.name}. Localização anatômica: ${item.location}. Função: ${item.function||''}`);
+      a.querySelector('.multi').onchange=async e=>{await addFiles(item,a,e.target.files);e.target.value=''};
+      a.querySelector('.camera').onchange=async e=>{await addFiles(item,a,e.target.files);e.target.value=''};
+      a.querySelector('h3').onclick=()=>{if(audioMode)speak(`${item.name}. Localização anatômica: ${item.location}. Função: ${item.function||''}`)};
+      pending.push(hydrate(item,a));
+    }
+  }
+
+  apply();
+  // Se a página abriu com uma âncora, navega corretamente após o DOM existir.
+  if(location.hash){
+    const id=decodeURIComponent(location.hash.slice(1));
+    requestAnimationFrame(()=>goToSection(id,$(`#nav a[data-section="${CSS.escape(id)}"]`)));
+  }
+  await Promise.allSettled(pending);
+  coverage();
+  apply();
+}
 function coverage(){const c=$$('.card'),h=c.filter(x=>x.dataset.has==='1').length,p=Math.round(h/94*100);$('#coverage').innerHTML=`<b>${h}</b> com imagem · <b>${94-h}</b> sem imagem · <b>94</b> total`;$('#heroCoverage').textContent=p+'%'}function apply(){const q=$('#search').value.toLowerCase().trim();$$('.card').forEach(c=>{const qok=c.dataset.name.includes(q),fok=filter==='all'||filter==='has'&&c.dataset.has==='1'||filter==='missing'&&c.dataset.has==='0';c.style.display=qok&&fok?'':'none'});$$('.cards').forEach(g=>g.previousElementSibling.style.display=[...g.children].some(c=>c.style.display!=='none')?'':'none')}$('#search').oninput=apply;$$('.filter').forEach(b=>b.onclick=()=>{$$('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;apply()});
 let scale=1,tx=0,ty=0,drag=false,sx=0,sy=0;const V=$('#viewer'),VI=$('#viewerImage'),ST=$('#stage');function transform(){VI.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;$('#reset').textContent=Math.round(scale*100)+'%'}function openViewer(src,title){VI.src=src;VI.alt=title;$('#viewerTitle').textContent=title;V.hidden=false;scale=1;tx=ty=0;transform();$('#close').focus()}$('#close').onclick=()=>V.hidden=true;$('#plus').onclick=()=>{scale=Math.min(6,scale+.25);transform()};$('#minus').onclick=()=>{scale=Math.max(.25,scale-.25);transform()};$('#reset').onclick=()=>{scale=1;tx=ty=0;transform()};ST.onpointerdown=e=>{drag=true;sx=e.clientX-tx;sy=e.clientY-ty;ST.setPointerCapture(e.pointerId)};ST.onpointermove=e=>{if(drag){tx=e.clientX-sx;ty=e.clientY-sy;transform()}};ST.onpointerup=()=>drag=false;ST.addEventListener('wheel',e=>{e.preventDefault();scale=Math.max(.25,Math.min(6,scale+(e.deltaY<0?.15:-.15)));transform()},{passive:false});window.addEventListener('keydown',e=>{if(!V.hidden&&e.key==='Escape')V.hidden=true});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('#installBtn').hidden=false;$('#installBtn').onclick=async()=>{await deferredPrompt.prompt();$('#installBtn').hidden=true}});if('serviceWorker'in navigator&&location.protocol!=='file:')window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));(async()=>{await openDB();await build()})();
