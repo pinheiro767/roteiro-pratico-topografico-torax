@@ -917,11 +917,11 @@ window.ATLAS_ITEMS=[
     "image": "77.png",
     "section": "MAMA",
     "original": "a.",
-    "name": "Ramos mamários laterais",
+    "name": "Ramos mamários mediais",
     "level": 1,
     "group": "",
-    "location": "Ramos destinados à mama.",
-    "function": "Participam do suprimento arterial do tecido mamário conforme a distribuição dos ramos que alcançam a mama."
+    "location": "Porção medial da mama, próxima ao esterno, alcançada por ramos perfurantes da artéria torácica interna.",
+    "function": "Distribuem sangue arterial principalmente para a porção medial da mama."
   },
   {
     "global": 78,
